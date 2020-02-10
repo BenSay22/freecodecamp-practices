@@ -1,0 +1,214 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Start header navigation bar */
+
+nav#navbar {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    position: fixed;
+    background-color: rgb(190, 48, 48);
+    width: 100%;
+}
+
+nav#navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 20px 20px;
+    font-size: 30px;
+}
+
+nav#navbar a:hover {
+    background-color: rgb(82, 82, 109);
+}
+
+/* End header navigation bar */
+
+/* Start of Main Welcome */
+
+section#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(90deg, rgb(39, 39, 39), black);
+}
+
+section#welcome-section h1 {
+    color: white;
+    font-size: 70px;
+}
+
+section#welcome-section p {
+    color: rgb(190, 48, 48);
+    font-style: italic;
+    font-weight: 10;
+    font-size: 40px;
+}
+
+/* End of Main Welcome */
+
+/* Start of Main Projects */
+
+section#projects {
+    width: 100%;
+    height: 147vh;
+    background-color: rgb(95, 95, 124);
+}
+
+section#projects h1 {
+    text-align: center;
+    margin: 0px 590px;
+    border-bottom: 2px solid white;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 90px;
+    padding-top: 100px;
+}
+
+div.row1 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+
+div.project-title {
+    width: 25%;
+    height: 90%;
+    background-color: aqua;
+    box-shadow: 2px 2px 2px black;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+img[alt="Javascript Calculator"] {
+    height: 350px;
+}
+
+img[alt="Map Data Across the Globe"] {
+    height: 350px;
+}
+
+img[alt="Wikipedia Viewer"] {
+    height: 350px;
+}
+
+img[alt="Tic Tac Toe Game"] {
+    height: 350px;
+}
+
+div.project-title a {
+    text-decoration: none;
+}
+
+div.project-title p {
+    font-size: 20px;
+    background-color: rgb(70, 70, 90);
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+span {
+    color: rgb(70, 70, 90);
+    transition: color 1s;
+}
+
+div.project-title:hover span{
+    color: orange;
+}
+
+div.row2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    background-color: rgb(70, 70, 90);
+    border: none;
+    padding: 10px 25px;
+    margin: 60px auto;
+    cursor: pointer;
+    transition:  background-color 0.5s;
+    color: white;
+    font-size: 20px;
+    display: block;
+}
+
+a.button {
+    text-decoration: none;
+}
+
+span.arrow {
+    color: white;
+    transition: transform 0.5s ease-out;
+    display: inline-block;
+    margin-left: 5px;
+    transform: scale(2);
+}
+
+button:hover {
+    background-color: rgb(190, 48, 48);
+}
+
+button:hover .arrow {
+    transform: translateX(5px) scale(2);
+}
+
+/* End of Main Projects */
+
+section#contact {
+    height: 720px;
+    background-color: rgb(49, 50, 56);
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section#contact h1, p {
+    text-align: center;
+}
+
+section#contact h1 {
+    font-size: 70px;
+}
+
+section#contact p {
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    border-top: 5px solid rgb(190, 48, 48);
+    background-color: rgb(49, 50, 56);
+    color: white;
+}
+
+a.freecodecamp {
+    text-decoration: none;
+    color: white;
+}
+
+footer p {
+    padding: 25px;
+    font-size: 20px;
+}
